@@ -35,7 +35,7 @@ namespace MyWebServer
                     totalBitesRead += bitesRead;
                     if(totalBitesRead > 10 * 1024)
                     {
-                        // htrow...
+                        // throw...
                         currentConnectionClient.Close(); 
                     }
                     streamReaderOfRequest.Append(Encoding.UTF8.GetString(buffer, 0, bitesRead));
