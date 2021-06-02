@@ -49,6 +49,7 @@ namespace MyWebServer
 <html> <head>
 <link rel=""icon"" href=""data:,"">
 </head> <body>Hello from *Василка*'s first custom server</body> </html>";
+                //we need to know the length of bytes of the real content of the page
                 int responseBodyLenghtOfBytes = Encoding.UTF8.GetByteCount(responseBody);
 
                 //text/html or text/plain ще знае какво да очаква
