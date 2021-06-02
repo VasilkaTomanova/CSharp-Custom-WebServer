@@ -8,8 +8,11 @@ namespace MyWebServer.Server.HTTPProtocol
 {
     public class HTTPRequest
     {
+        public HTTPRequestMethod Method { get; private set; }
 
+        public string Url { get; private set; }
+        public Dictionary<string, HTTPHeader> Headers { get; } = new Dictionary<string, HTTPHeader>();
 
-        public HTTPRequestMethod Method { get;private set;}
+        public string Body { get; private set; }
     }
 }
