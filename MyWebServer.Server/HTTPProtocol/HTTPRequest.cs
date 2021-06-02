@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyWebServer.Server.HTTPProtocol
 {
-  public  class HTTPRequest
+    public class HTTPRequest
     {
 
+
+        public HTTPRequestMethod Method { get;private set;}
     }
 }
