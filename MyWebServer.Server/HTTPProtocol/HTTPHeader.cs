@@ -8,8 +8,8 @@ namespace MyWebServer.Server.HTTPProtocol
 {
    public class HTTPHeader
     {
-        public string Name { get;private set; }
-        public string Value{ get; private set; }
+        public string Name { get; init; }
+        public string Value{ get; init; }
 
     }
 }
