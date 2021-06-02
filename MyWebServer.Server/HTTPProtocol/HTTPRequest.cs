@@ -11,7 +11,7 @@ namespace MyWebServer.Server.HTTPProtocol
         public HTTPRequestMethod Method { get; private set; }
 
         public string Url { get; private set; }
-        public Dictionary<string, HTTPHeader> Headers { get; } = new Dictionary<string, HTTPHeader>();
+        public HTTPHeaderCollection Headers { get; } = new HTTPHeaderCollection();
 
         public string Body { get; private set; }
     }
