@@ -11,5 +11,7 @@ namespace MyWebServer.Server.HTTPProtocol
         public HTTPStatusCode HTTPStatusCode { get;init; }
 
         public HTTPHeaderCollection ResponceHeaders { get; } = new HTTPHeaderCollection();
+
+        public string Body { get; private set; }
     }
 }
