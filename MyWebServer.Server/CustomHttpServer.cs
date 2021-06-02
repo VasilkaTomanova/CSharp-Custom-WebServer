@@ -31,7 +31,7 @@ namespace MyWebServer.Server
             while (true)
             {
                 //Използваме await ... AcceptTcpClientAsync, защото е по - бързо и обработваме повече
-                // и се възползваме от това, че компютътр има повече ядра, все пак е за сървър и ще има повече ядра и
+                // и се възползваме от това, че компютърът има повече ядра, все пак е за сървър и ще има повече ядра и
                 // така му използваме възможностите
                 TcpClient currentConnectionClient = await this.serverListener.AcceptTcpClientAsync();
                 NetworkStream networkStream = currentConnectionClient.GetStream();
