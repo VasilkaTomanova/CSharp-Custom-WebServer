@@ -9,5 +9,7 @@ namespace MyWebServer.Server.HTTPProtocol
    public class HTTPResponce
     {
         public HTTPStatusCode HTTPStatusCode { get;init; }
+
+        public HTTPHeaderCollection ResponceHeaders { get; } = new HTTPHeaderCollection();
     }
 }
